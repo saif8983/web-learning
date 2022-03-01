@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	body {
+		display: flex;
+		flex-direction: column;
+		background-color: gainsboro;
+	}
+	
+	.Main_container {
+		display: flex;
+		flex-direction: row;
+		background-color: gainsboro;
+	}
+	
+	.Left_Container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 70%;
+		height: 350vh;
+		padding: 20px;
+	}
+	
+	.Img_1Row {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 45vh;
+	}
+	
+	.img_1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		position: relative;
+		width: 20%;
+		height: 100%;
+		border: 1px solid black;
+		padding: 5px;
+		background-image: url(./dominos/4623-CMB1210.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+	}
+	
+	.Img_2Row {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 45vh;
+		margin-top: 60px;
+	}
+	
+	.img_2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		padding: 5px;
+		position: relative;
+		width: 20%;
+		height: 100%;
+		border: 1px solid black;
+		background-image: url(./dominos/4629-CMB1215.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+	}
+	
+	.Img_3Row {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 45vh;
+		margin-top: 60px;
+	}
+	
+	.img_3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		padding: 5px;
+		position: relative;
+		width: 20%;
+		height: 100%;
+		border: 1px solid black;
+		background-image: url(./dominos/farmhouse.webp);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+	}
+	
+	.Img_4Row {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 45vh;
+		margin-top: 60px;
+	}
+	
+	.img_4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		padding: 5px;
+		position: relative;
+		width: 20%;
+		height: 100%;
+		border: 1px solid black;
+		background-image: url(./dominos/new_chicken_sausage.webp);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+	}
+	
+	.Img_5Row {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 45vh;
+		margin-top: 60px;
+	}
+	
+	.img_5 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		padding: 5px;
+		position: relative;
+		width: 20%;
+		height: 100%;
+		border: 1px solid black;
+		background-image: url(./dominos/new_peppy_paneer.webp);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+	}
+	
+	.Img_6Row {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 45vh;
+		margin-top: 60px;
+	}
+	
+	.img_6 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		padding: 5px;
+		position: relative;
+		width: 20%;
+		height: 100%;
+		border: 1px solid black;
+		background-image: url(./dominos/PIZ5160_1.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+	}
+	
+	.Text_Rt {
+		text-align: start;
+		font-weight: bold;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: small;
+		color: white;
+		margin-top: 10vh;
+	}
+	
+	.Text_Dis {
+		font-size: x-small;
+		font-weight: bold;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		margin-top: 5vh;
+		text-align: start;
+	}
+	
+	.Text_Dis2 {
+		font-size: xx-small;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-align: start;
+	}
+	
+	.Text_Dis3 {
+		font-size: small;
+		text-align: center;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	
+	.Butt_AD {
+		border: 1px solid green;
+		background-color: white;
+		color: green;
+		width: 40%;
+		height: 4vh;
+		font-size: xx-small;
+		margin-top: 10px;
+		margin-left: 15vh;
+	}
+	
+	.sticky_left {
+		position: sticky;
+		top: 0;
+		width: 100%;
+		height: 60vh;
+		background-image: url(./dominos/empty_cart.png);
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-content: space-around;
+	}
+	
+	.left_container {
+		position: relative;
+		width: 20%;
+		height: 300vh;
+		margin-top: 25vh;
+	}
+	
+	.Navbar_F {
+		display: flex;
+		justify-content: row;
+		position: sticky;
+		top: 0;
+		width: 100%;
+		height: 8vh;
+		border: 1px solid red;
+		background-color: blue;
+	}
+	
+	.Navbar_Fl {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+	}
+	
+	.Navbar_Fr {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 40%;
+		margin-left: 40%;
+		color: white;
+	}
+	
+	.label {
+		margin-top: 2vh;
+	}
+	
+	.Navbar_S {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		position: sticky;
+		width: 100%;
+		height: 6vh;
+		border: 1px solid red;
+		top: 8vh;
+	}
+	
+	.Nav_flex {
+		display: flex;
+		flex-direction: column;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="Nav_flex">
+		<div class="Navbar_F">
+			<div class="Navbar_Fl"><img src="C:\Users\Admin\Downloads\logo_white.svg"></div>
+			<div class="Navbar_Fr">
+				<div class="label">
+					<input type="radio" id="Rad_Del">
+					<label for="Rad_Del">Delivery</label>
+					<input type="radio" id="Rad_Pic">
+					<label for="Rad_Pic">Pick up/Dine in</label>
+				</div>
+				<div>
+					<p>Nagpur</p>
+				</div>
+				<div>
+					<p>8983400941</p>
+				</div>
+			</div>
+		</div>
+		<div class="Navbar_S">
+			<div style="font-size: xx-small;">
+				<p>EVERYDAY VALUE</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>BESTSELLERS</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>CHICKEN LOVERS PIZZA</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>VEG PIZZA</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>NON-VEG PIZZA</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>MEALS & COMBOS</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>NEW LAUNCHES</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>PIZZA MANIA</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>SPECIALITY CHICKEN</p>
+			</div>
+			<div style="font-size: xx-small;">
+				<p>SIDES</p>
+			</div>
+		</div>
+	</div>
+	<div class="Main_container">
+		<div class="Left_Container">
+			<div class="Img_1Row">
+				<div class="img_1">
+					<div class="Text_Rt">
+						<p>RS.980</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Meal for 4: Chicken Dominator Combo</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_1">
+					<div class="Text_Rt">
+						<p>RS.574</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Couples Combo - Veg</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_1">
+					<div class="Text_Rt">
+						<p>RS.980</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Meal for 4: Indi Tandoori Paneer & Peppy Paneer Combo</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+			</div>
+			<div class="Img_2Row">
+				<div class="img_2">
+					<div class="Text_Rt">
+						<p>RS.580</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Meal for 2: Chicken Dominator Combo</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_2">
+					<div class="Text_Rt">
+						<p>RS.2181</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Party Combo - 4 Veg Pizza varieties + Sides & Pepsi</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_2">
+					<div class="Text_Rt">
+						<p>RS.2561</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Party Combo - 4 Non-Veg Pizza varieties + Sides & Pepsi</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+			</div>
+			<div class="Img_3Row">
+				<div class="img_3">
+					<div class="Text_Rt">
+						<p>RS.419</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Peppy Paneer</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_3">
+					<div class="Text_Rt">
+						<p>RS.499</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Veg Extravaganza</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_3">
+					<div class="Text_Rt">
+						<p>RS.280</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Farmhouse</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+			</div>
+			<div class="Img_4Row">
+				<div class="img_4">
+					<div class="Text_Rt">
+						<p>RS.419</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Veg Extravaganza</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_4">
+					<div class="Text_Rt">
+						<p>RS.319</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Cheese n Corn</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_4">
+					<div class="Text_Rt">
+						<p>RS.349</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Pepper Barbecue Chicken</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+			</div>
+			<div class="Img_5Row">
+				<div class="img_5">
+					<div class="Text_Rt">
+						<p>RS.319</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Chicken Sausage</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_5">
+					<div class="Text_Rt">
+						<p>RS.529</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Spiced Double Chicken</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_5">
+					<div class="Text_Rt">
+						<p>RS.679</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Indo Fusion Chicken Pizza</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+			</div>
+			<div class="Img_6Row">
+				<div class="img_6">
+					<div class="Text_Rt">
+						<p>RS.551</p>
+					</div>
+					<div class="Text_Dis">
+						<p>Indo Fusion Chicken Pizza</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_6">
+					<div class="Text_Rt">
+						<p>RS.679</p>
+					</div>
+					<div class="Text_Dis">
+						<p>The 5 Chicken Feast Pizza</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+				<div class="img_6">
+					<div class="Text_Rt">
+						<p>RS.599</p>
+					</div>
+					<div class="Text_Dis">
+						<p>The 5 Chicken Feast Pizza</p>
+					</div>
+					<div class="Text_Dis2">
+						<p>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</p>
+					</div>
+					<div>
+						<button class="Butt_AD">ADD TO CART </button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="left_container">
+			<div class="sticky_left" style="font-family: Verdana;font-size: small;text-align: center;">
+				<p><b>YOUR CART IS EMPTY</b>
+					<p class="Text_Dis3"> Please add some items from the menu.</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
